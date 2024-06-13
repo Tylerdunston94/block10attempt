@@ -1,0 +1,154 @@
+// rectangles //
+
+.box-container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    height: 100px;
+    width: 200px;
+    margin: 50px;
+    background-color: teal;
+}
+
+// all circles //
+
+.small-circle {
+    position: absolute;
+}
+
+.circle-one {
+    width: 25px;
+    height: 25px;
+    background-color: pink;
+    border-radius: 50%;
+    top: 75px;
+    left: 75px;
+    position: absolute;
+}
+
+.circle-two {
+    width: 25px;
+    height: 25px;
+    background-color: pink;
+    border-radius: 50%;
+    top: 100px;
+    right: 1100px;
+    position: absolute;
+}
+
+.circle-three {
+    width: 25px;
+    height: 25px; 
+    background-color: pink;
+    border-radius: 50%;
+    top: 150px;
+    left: 75px;
+    position: absolute;
+}
+
+.large-circle {
+    position: relative;
+}
+
+.large-circle-pink {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    top: 125px;
+    left: 450px;
+    position: absolute;
+}
+
+.large-circle-gold {
+    width: 50px;
+    height: 50x;
+    background-color: goldenrod;
+    border-radius: 50%;
+    top: 75px;
+    left: 350px;
+    position: absolute;
+}
+
+//boxes//
+
+.box-container-bottom {
+    display: flex;
+}
+.large-box-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    z-index: 0;
+}
+
+.large-box-middle {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 1885px;
+    height: 800px;
+    background-color: teal;
+}
+
+.ppl-img {
+    position: absolute;
+    left: 10px;
+    max-width: 500px;
+    height: 200px;
+    bottom: 0;
+    z-index: 0;
+}
+
+//triangles//
+
+.triangle-one {
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 250px solid #006400;
+ }
+
+.triangle-two {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #00FF00;
+ }
+
+//contact box//
+
+.contact-form {
+    width: 10px;
+    border: 1x solid black;
+    border-radius: 10px;
+    border-color: black;
+    top: 0;
+    right: 200px;
+    position: absolute;
+}
+    /* Responsive design for boxes */
+@media (max-width: 500px) {
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px;
+    }
+}
